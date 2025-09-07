@@ -28,3 +28,8 @@ This project showcases mobile engineering, Firebase integration, and testing bes
 - Data persistence in Firestore with merge logic.  
 - UI adapts to missing data with graceful fallbacks.
 
+## Example Screenshots
+<img width="886" height="728" alt="Image" src="https://github.com/user-attachments/assets/764b602b-fd34-4f77-a44c-10dee32fd7a8" />
+
+<img width="881" height="733" alt="Image" src="https://github.com/user-attachments/assets/dd17f5af-e750-4dd8-80ad-bb4094d56a65" />
+
