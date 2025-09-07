@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Dating App Android Studio</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Swiping_Title">Dating App Name</string>
+    <string name="No_Swipes">No swipes left</string>
+    <string name="Matches">Matches Messaging</string>
+    <string name="Profile">Profile</string>
+    <string name="Leaderboard">Leaderboard</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Manage_Profile">Manage Profile</string>
+    <string name="Edit_Profile">Edit Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

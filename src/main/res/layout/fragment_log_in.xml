@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.LoginActivity"
+    android:id="@+id/LogInFragment"
+    android:fitsSystemWindows="true">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Log In"
+        android:textSize="54sp"
+        android:textStyle="bold"
+        android:gravity="top|center"
+        android:background="@drawable/gradient"/>
+    
+    <EditText
+        android:id="@+id/emailText"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Email"/>
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="textPassword"
+        android:translationY="100dp"
+        android:hint="Password"/>
+
+    <Button
+        android:id="@+id/LogInButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:translationY="200dp"
+        android:text="Log In"/>
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:translationY="250dp"
+        android:text="Register"/>
+
+
+</FrameLayout>

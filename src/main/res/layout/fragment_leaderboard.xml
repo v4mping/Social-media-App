@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Leaderboard"
+    android:id="@+id/leaderboardMain"
+    android:background="@drawable/gradient"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Title TextView -->
+                <TextView
+                    android:id="@+id/leaderboardTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"
+                    android:gravity="center"
+                    android:layout_marginBottom="16dp"
+                    android:text="Leaderboards" />
+
+                <!-- CardView Container -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    app:cardUseCompatPadding="true"
+                    android:layout_marginBottom="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <!-- Refresh Button -->
+                        <Button
+                            android:id="@+id/refreshButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="Refresh Leaderboard" />
+
+                        <!-- Leaderboard Label -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="Top Daters:"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:gravity="center_horizontal" />
+
+                        <!-- RecyclerView -->
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/leaderboardRecyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="vertical" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</FrameLayout>

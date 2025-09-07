@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.EditProfileFragment"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:background="@drawable/gradient"
+    android:fitsSystemWindows="true"
+    android:id="@+id/EditProfile">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/editTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile" />
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_profile"
+                android:translationX="95dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/NameInput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/NameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/Namebutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Name" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Genderinput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Gender">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/GenderEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/Genderbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Gender" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Locationinput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Location">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/LocationEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/Locationbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Location" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/AgeInput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/AgeEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Age"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/AgeButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Age" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/HeightEditInput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/HeightEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Height" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/HeightButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save height" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <Spinner
+                android:id="@+id/prompt1view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Prompt1EditInput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Prompt1EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Prompt answer" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/Prompt1Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Prompt 1" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <Spinner
+                android:id="@+id/prompt2view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Prompt2EditInput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Prompt2EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Prompt answer" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/Prompt2Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Prompt 2" />
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Profile"
+                android:layout_margin="16dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

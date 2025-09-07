@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Profile"
+    android:id="@+id/profileMain"
+    android:background="@drawable/gradient" >
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_profile"
+        android:translationX="95dp"
+        android:translationY="40dp" />
+
+    <TextView
+        android:id="@+id/Manage_Profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Manage Profile" />
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:textSize="18sp"
+        android:translationX="130dp"
+        android:translationY="10dp"/>
+
+    <TextView
+        android:id="@+id/genderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender: "
+        android:textSize="18sp"
+        android:translationX="40dp"
+        android:translationY="250dp"/>
+
+    <TextView
+        android:id="@+id/locationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location: "
+        android:textSize="18sp"
+        android:translationX="40dp"
+        android:translationY="300dp"/>
+
+    <TextView
+        android:id="@+id/ageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age: "
+        android:textSize="18sp"
+        android:translationX="40dp"
+        android:translationY="350dp"/>
+
+    <TextView
+        android:id="@+id/heightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Height: "
+        android:textSize="18sp"
+        android:translationX="40dp"
+        android:translationY="400dp"/>
+
+    <TextView
+        android:id="@+id/Prompt1Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prompt 1: "
+        android:textSize="18sp"
+        android:translationX="40dp"
+        android:translationY="450dp"/>
+
+    <TextView
+        android:id="@+id/Prompt1Answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prompt 1 Answer: "
+        android:textSize="18sp"
+        android:translationX="40dp"
+        android:translationY="480dp"/>
+
+
+    <TextView
+        android:id="@+id/Prompt2Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prompt 2: "
+        android:textSize="18sp"
+        android:translationX="40dp"
+        android:translationY="520dp"/>
+
+    <TextView
+        android:id="@+id/Prompt2Answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prompt 2 Answer: "
+        android:textSize="18sp"
+        android:translationX="40dp"
+        android:translationY="550dp"/>
+
+    <Button
+        android:id="@+id/editProfileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:translationX="150dp"
+        android:translationY="680dp" />
+
+</FrameLayout>
